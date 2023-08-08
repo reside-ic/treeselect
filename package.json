@@ -1,24 +1,36 @@
 {
   "name": "@reside-ic/treeselect",
-  "version": "1.0.5",
-  "description": "Treeselect component, mainly used in Hint",
-  "main": "dist/js/index.js",
-  "author": "m-kusumgar",
-  "license": "MIT",
-  "files": [
-    "dist/*",
-    "src/*",
-    "vue-shims.d.ts"
-  ],
-  "types": "shims-vue.d.ts",
+  "version": "1.0.6",
+  "description": "Treeselect component, mainly for Hint",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "webpack & cp ./node_modules/@reside-ic/vue3-treeselect/dist/vue3-treeselect.css ./dist/index.css",
-    "test:unit": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint"
+    "test": "jest -c jest.config.js",
+    "sass": "gulp sass",
+    "build": "webpack & gulp sass"
   },
+  "main": "./dist/js/index.js",
+  "files": [
+    "/dist",
+    "/src",
+    "index.d.ts"
+  ],
+  "types": "./index.d.ts",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reside-ic/treeselect.git"
+  },
+  "author": "reside-ic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/reside-ic/treeselect/issues"
+  },
+  "homepage": "https://github.com/reside-ic/treeselect#readme",
   "dependencies": {
-    "@reside-ic/vue3-treeselect": "^1.0.18"
+    "@popperjs/core": "^2.11.7",
+    "@reside-ic/vue3-treeselect": "^1.0.18",
+    "html-webpack-plugin": "^5.5.1"
   },
   "devDependencies": {
     "@babel/core": "^7.21.4",
@@ -28,13 +40,27 @@
     "@vue/test-utils": "^2.3.2",
     "@vue/vue3-jest": "^27.0.0-alpha.1",
     "babel-jest": "^27.5.0",
+    "bootstrap": "^5.2.3",
+    "bootstrap-vue-next": "^0.8.4",
+    "feather-icons": "^4.29.0",
+    "floating-vue": "^2.0.0-beta.20",
+    "gulp": "^4.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
     "jest": "^27.5.0",
+    "jsonata": "^1.8.4",
+    "node-sass": "^8.0.0",
     "path": "^0.12.7",
+    "through": "^2.3.8",
     "ts-jest": "^27.0.0",
     "ts-loader": "^9.4.2",
     "typescript": "^4.0.5",
+    "vue": "^3.2.47",
+    "vue-feather": "^2.0.0",
     "vue-loader": "^17.0.0",
     "vue3-jest": "^27.0.0-alpha.1",
+    "vue3-treeselect": "^0.1.10",
     "webpack": "^5.79.0",
     "webpack-cli": "^5.0.1",
     "webpack-merge": "^5.8.0"

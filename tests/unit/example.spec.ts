@@ -1,5 +1,5 @@
 import { VueWrapper, mount } from "@vue/test-utils";
-import TreeSelect from "../../src/components/TreeSelect.vue";
+import TreeSelect from "../../src/TreeSelect.vue";
 import Treeselect from "@reside-ic/vue3-treeselect";
 
 describe("Treeselect component", () => {
