@@ -43,9 +43,6 @@ const config = {
 };
 
 const mainConfig = {
-    externals: {
-        vue: 'Vue'
-    },
     entry: path.resolve(__dirname, 'src/index.ts'),
     output: {
         filename: 'js/index.js',
@@ -58,9 +55,6 @@ const mainConfig = {
 };
 
 const pluginConfig = {
-    externals: {
-        vue: 'Vue'
-    },
     entry: path.resolve(__dirname, 'src/plugin.js'),
     output: {
         filename: 'js/tree-select.min.js',
