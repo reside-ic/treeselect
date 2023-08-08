@@ -6,9 +6,10 @@
   :multiple="multiple"
   @update:model-value="input">
   <!-- way to pass down all slots -->
-  <template v-for="(_, slot) in $slots" v-slot:[slot]="scope">
+  <!-- <template v-for="(_, slot) in $slots" v-slot:[slot]="scope">
       <slot :name="slot" v-bind="scope || {}" />
-  </template>
+  </template> -->
+  <slot></slot>
   </base-tree-select>
 </template>
 <script lang="ts">
