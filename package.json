@@ -1,6 +1,6 @@
 {
   "name": "@reside-ic/treeselect",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Treeselect component, mainly for Hint",
   "scripts": {
     "test": "jest -c jest.config.js",
@@ -30,7 +30,8 @@
   "dependencies": {
     "@popperjs/core": "^2.11.7",
     "@reside-ic/vue3-treeselect": "^1.0.18",
-    "html-webpack-plugin": "^5.5.1"
+    "html-webpack-plugin": "^5.5.1",
+    "vue": "^3.2.47"
   },
   "devDependencies": {
     "@babel/core": "^7.21.4",
@@ -56,7 +57,6 @@
     "ts-jest": "^27.0.0",
     "ts-loader": "^9.4.2",
     "typescript": "^4.0.5",
-    "vue": "^3.2.47",
     "vue-feather": "^2.0.0",
     "vue-loader": "^17.0.0",
     "vue3-jest": "^27.0.0-alpha.1",

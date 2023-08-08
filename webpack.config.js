@@ -5,7 +5,10 @@ const { merge } = require('webpack-merge');
 const config = {
     mode: 'production',
     resolve: {
-        extensions: ['.ts', '.js', '.vue', '.json']
+        extensions: ['.ts', '.js', '.vue', '.json'],
+        alias: {
+            'vue$': 'vue/dist/vue.runtime.esm-bundler.js',
+        }
     },
     module: {
         rules: [
