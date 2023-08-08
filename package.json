@@ -1,6 +1,6 @@
 {
   "name": "@reside-ic/treeselect",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Treeselect component, mainly used in Hint",
   "main": "dist/js/index.js",
   "author": "m-kusumgar",
