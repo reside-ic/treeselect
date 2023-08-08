@@ -43,10 +43,7 @@ const config = {
     },
     plugins: [
         new VueLoaderPlugin(),
-    ],
-    externals: {
-        vue: "Vue"
-    }
+    ]
 };
 
 const mainConfig = {
