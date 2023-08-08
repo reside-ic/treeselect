@@ -5,11 +5,7 @@ const { merge } = require('webpack-merge');
 const config = {
     mode: 'production',
     resolve: {
-        extensions: ['.ts', '.js', '.vue', '.json'],
-        symlinks: false,
-        alias: {
-            "vue": path.resolve("./node_modules/vue")
-        }
+        extensions: ['.ts', '.js', '.vue', '.json']
     },
     module: {
         rules: [
@@ -43,7 +39,10 @@ const config = {
     },
     plugins: [
         new VueLoaderPlugin(),
-    ]
+    ],
+    externals: {
+        vue: "Vue"
+    }
 };
 
 const mainConfig = {
