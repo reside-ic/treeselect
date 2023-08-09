@@ -1,6 +1,6 @@
 {
   "name": "@reside-ic/treeselect",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Treeselect component, mainly for Hint",
   "scripts": {
     "test": "jest -c jest.config.js",
